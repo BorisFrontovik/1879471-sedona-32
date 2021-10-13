@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25,88px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30spx;
+  line-height: 36px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.advantages-title-1,.advantages-title-2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color:#FFFFFF;
+  background-color: #83B3D3;
+}
+
+.advantages-number-1,.advantages-number-2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#FFFFFF;
+  background-color: #83B3D3;
+}
+
+.advantages-text-1,.advantages-text-2{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#FFFFFF;
+  background-color: #83B3D3;
+}
+
+.advantages-number,.advantages-text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:basic/dark;
+  background-color: #FFFFFF;
+}
+
+.reason-title-home, .reason-title-gift{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color:basic/dark;
+  background-color: #83B3D31F;
+}
+
+.reason-title-food {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color:basic/dark;
+  background-color: #FFFFFF;
+}
+
+.reason-text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#333333;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color:#000000;
+  background-color: #FFFFFF;
+}
+
+.search-description {
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+color:basic/dark;
+background-color: #FFFFFF;
+}
+
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color:#FFFFFF;
+  background-color: #756257;
+}
+
+.subscription-title-index {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color:#FFFFFF;
+  background-color:black;
+}
+
+.subscription-text-index {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#FFFFFF;
+  background-color: black;
+}
+
+
+
+
+
+/* CATALOG  */
+
+.inner-header-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#FFFFFF;
+  background-color: black;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.7px;
+  color:#FFFFFF;
+  background-color: black;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+  color:#FFFFFF;
+  background-color: black;
+}
+
+.control-label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color:#FFFFFF;
+  background-color: black;
+}
+
+/* ШРИФТЫ ДЛЯ КНОПОК "ПРИМЕНИТЬ","СБРОСИТЬ" */
+
+.menu-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38.82px;
+  color:#000000;
+  background-color: #FFFFFF;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.06px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.product-card-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: basic/dark;
+  background-color: #FFFFFF;
+}
+
+.product-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.29px;
+  color: basic/dark;
+  background-color: #FFFFFF;
+}
+
+.product-card-button button-brown{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.7px;
+  color:#FFFFFF;
+  background-color: #756257;
+}
+
+.product-card-button button-blue{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.7px;
+  color:#FFFFFF;
+  background-color: #83B3D3;
+}
+
+.button pagination-show-more {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+  color:#FFFFFF;
+  background-color: #83B3D3;
+}
+
+.pagination-link pagination-current {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+  color:#000000;
+  background-color: #e5e5e5;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+  color:#FFFFFF;
+  background-color: #83B3D3;
+}
+
+.
+.subscription-title-inner {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color:black;
+  background-color:#FFFFFF;
+}
+
+.subscription-text-inner {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:black;
+  background-color:#FFFFFF;
+}
