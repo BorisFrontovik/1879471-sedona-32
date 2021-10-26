@@ -19,11 +19,32 @@ html {
 }
 
 body {
+  margin: 0;
+  min-height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.3;
   color: #000000;
+  background-color: #eeeeee;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
   background-color: #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation {
@@ -33,8 +54,17 @@ body {
   justify-content: space-between;
 }
 
-.navigation-list,
+.navigation-list {
+  margin-left: 71px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  list-style-type: none;
+}
+
 .navigation-user {
+  margin-right: 72px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -43,33 +73,53 @@ body {
 }
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
-  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  margin-right: 33px;
+  flex-wrap: wrap;
 }
 
-.main-container {
-  flex-grow: 1;
+.favorites-button {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 160px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 72px;
+  margin-left: 20px;
+  color: #FFFFFF;
+  background-color: #756257;
 }
 
 .main-index {
+  flex-grow: 1;
   background-repeat: no-repeat;
 }
 
-.page-container {
+.main-column {
   width: 1200px;
-  margin: 0 auto;
+  height: 485px;
+  background-image: url("../images/jpg/index-background-1.jpg");
 }
 
 .advantages {
   text-align: center;
+  margin-top: 63px;
 }
 
-.advantages-title h2 {
+.main-advantages-title {
   margin: 0 auto;
+  padding-top: 0;
+  margin-bottom: 23px;
   font-weight: 700;
   font-size: 30px;
   width: 720px;
@@ -78,6 +128,7 @@ body {
 
 .advantages-description {
   margin: 0 auto;
+  margin-bottom: 79px;
   font-weight: 400;
   font-size: 22px;
   width: 720px;
@@ -85,32 +136,49 @@ body {
 }
 
 .advantages-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-}
-
-.advantages-list .advantages-title {
-  font-weight: 700;
-  font-size: 24px;
-  color: #000000;
-}
-
-.advantages-number,
-.advantages-text {
-  font-weight: 400;
-  font-size: 18px;
-  color: basic/dark;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
   width: 400px;
 }
 
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 98px;
+  margin-bottom: 25px;
+  padding-top: 0;
+  color: #000000;
+}
+
+.advantages-number {
+  font-weight: 400;
+  font-size: 18px;
+  width: 250px;
+  margin-left: 75px;
+  padding-top: 0;
+  color: basic/dark;
+}
+
+.advantages-text {
+  font-weight: 400;
+  font-size: 18px;
+  width: 250px;
+  margin-top: 26px;
+  margin-bottom: 77px;
+  margin-left: 75px;
+  padding-top: 0;
+  color: basic/dark;
+}
+
 .advantages-item-blue {
   display: flex;
+  width: 1200px;
   text-align: center;
 }
 
@@ -131,76 +199,116 @@ body {
 
 .reason-list {
   display: flex;
-  height: 384px;
-  text-align: center;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.reason-title-home,
-.reason-title-gift {
-  font-weight: 700;
-  font-size: 24px;
-  color: basic/dark;
-  background-color: #83B3D31F;
+.reason-item {
+  width: 400px;
 }
 
-.reason-title-food {
+.reason-title {
   font-weight: 700;
   font-size: 24px;
+  margin-top: 23px;
+  margin-bottom: 20px;
   color: basic/dark;
 }
 
 .reason-text {
   font-weight: 400;
   font-size: 18px;
+  width: 250px;
+  margin-left: 75px;
+  margin-bottom: 79px;
   color: #333333;
 }
 
 .search {
-  display: block;
-  height: 417px;
   text-align: center;
-  justify-content: space-between;
 }
 
 .search-title {
   font-weight: 700;
   font-size: 30px;
+  text-transform: uppercase;
+  width: 720px;
+  margin-left: 240px;
+  margin-top: 91px;
+  margin-bottom: 15px;
   color: #000000;
 }
 
 .search-description {
-font-weight: 400;
-font-size: 22px;
-color: basic/dark;
+  font-weight: 400;
+  font-size: 22px;
+  width: 720px;
+  margin-left: 240px;
+  color: basic/dark;
 }
 
 .search-button {
   font-weight: 700;
   font-size: 20px;
+  text-transform: uppercase;
+  width: 575px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  margin-top: 70px;
+  margin-bottom: 91px;
   color: #FFFFFF;
   background-color: #756257;
 }
 
-.subscription-index {
-  display: flex;
+.subscription-columns {
+  width: 1200px;
   height: 411px;
+  background-image: url("../images/jpg/index-background-2.jpg");
+}
+
+.subscription-index {
   text-align: center;
-  background-image: url("images/jpg/index-background-2.jpg");
 }
 
 .subscription-title-index {
   font-weight: 700;
   font-size: 30px;
+  text-transform: uppercase;
+  width: 720px;
+  margin-left: 240px;
+  margin-top: 94px;
+  margin-bottom: 15px;
   color: #FFFFFF;
-  background-color: black;
 }
 
 .subscription-text-index {
   font-weight: 400;
   font-size: 22px;
+  width: 720px;
+  margin-left: 240px;
+  margin-bottom: 26px;
   color: #FFFFFF;
-  background-color: black;
+}
+
+.subscription-form {
+  display: flex;
+}
+
+.field {
+  width: 600px;
+  margin-left: 200px;
+  margin-bottom: 94px;
+}
+
+.subscription-button {
+  font-weight: 700;
+  font-size: 20px;
+  width: 200px;
+  margin-right: 200px;
+  margin-bottom: 94px;
+  color: #FFFFFF;
+  background-color: #83B3D3;
 }
 
 .page-footer-container {
@@ -215,11 +323,26 @@ color: basic/dark;
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
+.contacts-phone {
+  width: 720px;
+  height: 50px;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 40px;
+  margin-left: 61px;
+  margin-bottom: 30px;
+}
 
-
+.htmlacademy-link {
+  text-align: center;
+  padding-top: 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
 
 /* CATALOG  */
 
@@ -259,6 +382,7 @@ color: basic/dark;
 /* ШРИФТЫ ДЛЯ КНОПОК "ПРИМЕНИТЬ","СБРОСИТЬ" */
 
 .menu-title {
+  position: absolute;
   font-weight: 700;
   font-size: 30px;
   color: #000000;
@@ -309,6 +433,8 @@ color: basic/dark;
 .button pagination-show-more {
   font-weight: 700;
   font-size: 20px;
+  width: 625px;
+  margin: 0 auto;
   color: #FFFFFF;
   background-color: #83B3D3;
 }
